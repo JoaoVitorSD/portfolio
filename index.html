@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>João Vitor Depollo — Sênior Software Engineer</title>
+<meta name="description" content="Engenheiro de software sênior. Java, Spring, Python, Go, React e Next.js. Sistemas distribuídos, infraestrutura e engenharia de software aplicada a IA. Belo Horizonte, Brasil.">
+<meta name="author" content="João Vitor Santana Depollo">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="João Vitor Depollo — Sênior Software Engineer">
+<meta property="og:description" content="Full-stack do zero à produção: Java + Spring no backend, Next.js no frontend, Kubernetes na base.">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2308090A'/%3E%3Cpath d='M8 9h4v10.4c0 2.1-1.5 3.6-3.7 3.6H7v-3h1c.7 0 1-.4 1-1.1V9z' fill='%23FF5A1F'/%3E%3Cpath d='M15 9h3.4l2.6 8.2L23.6 9H27l-4.6 14h-2.8L15 9z' fill='%23F5F1E8'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400;12..96,75..100,600;12..96,75..100,800&family=Martian+Mono:wght@300;400;600&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<div class="scroll-rail"><div class="scroll-rail__fill" id="scrollFill"></div></div>
+
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-aurora bg-aurora--a"></div>
+  <div class="bg-aurora bg-aurora--b"></div>
+  <div class="bg-noise"></div>
+  <div class="bg-sweep"></div>
+</div>
+
+<!-- ══════════════ NAV ══════════════ -->
+<header class="nav" id="nav">
+  <a class="nav__mark" href="#top" aria-label="Início">
+    <span class="nav__mark-glyph">JV</span>
+    <span class="nav__mark-dot"></span>
+  </a>
+  <nav class="nav__links" aria-label="Navegação principal">
+    <a href="#sobre" data-nav>Sobre</a>
+    <a href="#stack" data-nav>Stack</a>
+    <a href="#experiencia" data-nav>Experiência</a>
+    <a href="#formacao" data-nav>Formação</a>
+  </nav>
+  <a class="btn btn--ghost nav__cta" href="mailto:joaovitorsantanadepollo@gmail.com">
+    <span class="btn__pulse"></span>Falar comigo
+  </a>
+</header>
+
+<main id="top">
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero" id="hero">
+  <div class="hero__spot" id="heroSpot" aria-hidden="true"></div>
+
+  <div class="wrap hero__grid">
+
+    <div class="hero__lead">
+      <p class="eyebrow rise" style="--d:0ms">
+        <span class="status"><span class="status__dot"></span>disponível para novos desafios</span>
+      </p>
+
+      <h1 class="hero__title">
+        <span class="rise" style="--d:80ms">João Vitor</span>
+        <span class="rise outline" style="--d:170ms">Depollo</span>
+      </h1>
+
+      <p class="hero__role rise" style="--d:260ms">
+        <span class="tick">Sênior Software&nbsp;Engineer</span>
+        <span class="sep">/</span>
+        <span class="dim">Java · Python · Go · Fullstack · Next.js</span>
+      </p>
+
+      <p class="hero__pitch rise" style="--d:340ms">
+        Construo produtos <em>do zero à produção</em> — de ferramentas operacionais internas
+        a plataformas SaaS e sistemas logísticos de alta escala. Código bem testado,
+        decisões técnicas pragmáticas e entrega contínua de valor.
+      </p>
+
+      <div class="hero__actions rise" style="--d:420ms">
+        <a class="btn btn--solid" href="#experiencia">
+          Ver trajetória
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
+        </a>
+        <a class="btn btn--wire" href="https://www.linkedin.com/in/joaodepollo-dev" target="_blank" rel="noopener">
+          LinkedIn
+          <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M5 11L11 5M11 5H6M11 5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- terminal -->
+    <div class="hero__term rise" style="--d:500ms">
+      <div class="term">
+        <div class="term__bar">
+          <span class="term__lights"><i></i><i></i><i></i></span>
+          <span class="term__path">~/depollo — zsh</span>
+        </div>
+        <pre class="term__body" id="termBody" aria-live="polite"></pre>
+      </div>
+      <div class="term__glow" aria-hidden="true"></div>
+    </div>
+
+  </div>
+
+  <!-- spec sheet -->
+  <div class="wrap">
+    <dl class="spec rise" style="--d:620ms">
+      <div class="spec__cell">
+        <dt>Experiência</dt>
+        <dd><span class="num" data-count="4">0</span><span class="num-suf">+ anos</span></dd>
+      </div>
+      <div class="spec__cell">
+        <dt>Núcleo técnico</dt>
+        <dd>Java · Spring · Next.js</dd>
+      </div>
+      <div class="spec__cell">
+        <dt>Formação</dt>
+        <dd>Sistemas de Informação — UFMG</dd>
+      </div>
+      <div class="spec__cell">
+        <dt>Base</dt>
+        <dd>Belo Horizonte, BR <span class="dim">· remoto</span></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ══════════════ MARQUEE ══════════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span class="marquee__set">
+      <b>Java</b><i>◆</i><b>Spring Boot</b><i>◆</i><b>Python</b><i>◆</i><b>Go</b><i>◆</i><b>React</b><i>◆</i><b>Next.js</b><i>◆</i><b>PostgreSQL</b><i>◆</i><b>ClickHouse</b><i>◆</i><b>Docker</b><i>◆</i><b>Kubernetes</b><i>◆</i><b>RabbitMQ</b><i>◆</i><b>Firebase</b><i>◆</i><b>Dart</b><i>◆</i><b>SQL Server</b><i>◆</i><b>Oracle</b><i>◆</i><b>CI/CD</b><i>◆</i><b>LLM Agents</b><i>◆</i>
+    </span>
+    <span class="marquee__set">
+      <b>Java</b><i>◆</i><b>Spring Boot</b><i>◆</i><b>Python</b><i>◆</i><b>Go</b><i>◆</i><b>React</b><i>◆</i><b>Next.js</b><i>◆</i><b>PostgreSQL</b><i>◆</i><b>ClickHouse</b><i>◆</i><b>Docker</b><i>◆</i><b>Kubernetes</b><i>◆</i><b>RabbitMQ</b><i>◆</i><b>Firebase</b><i>◆</i><b>Dart</b><i>◆</i><b>SQL Server</b><i>◆</i><b>Oracle</b><i>◆</i><b>CI/CD</b><i>◆</i><b>LLM Agents</b><i>◆</i>
+    </span>
+  </div>
+</div>
+
+<!-- ══════════════ SOBRE ══════════════ -->
+<section class="section" id="sobre">
+  <div class="wrap">
+    <header class="s-head reveal">
+      <span class="s-head__idx">[ 01 ]</span>
+      <h2 class="s-head__title">Sobre</h2>
+      <span class="s-head__rule"></span>
+    </header>
+
+    <div class="about">
+      <div class="about__text reveal">
+        <p class="lede">
+          Engenheiro de software sênior com formação em <strong>Sistemas de Informação pela UFMG</strong>
+          e experiência full-stack construindo produtos do zero à produção.
+        </p>
+        <p>
+          No <strong>backend</strong>, trabalho principalmente com Java e Spring (Data, Web, Security), com sólida
+          experiência em bancos relacionais — PostgreSQL, SQL Server e Oracle — e analíticos, como ClickHouse.
+          No <strong>frontend</strong>, desenvolvo com React e Next.js.
+        </p>
+        <p>
+          Também atuo em <strong>infraestrutura e DevOps</strong>: Docker, Kubernetes, CI/CD e ambientes self-hosted.
+          Tenho interesse especial em engenharia de software aplicada a <strong>IA</strong> — agentes, workflows com
+          LLMs e automação — e em arquitetura de sistemas distribuídos.
+        </p>
+      </div>
+
+      <aside class="about__panel reveal" style="--d:120ms">
+        <span class="panel__label">// princípios</span>
+        <ul class="principles">
+          <li><span class="principles__k">01</span> Código bem testado, não código bonito.</li>
+          <li><span class="principles__k">02</span> Decisão técnica pragmática &gt; dogma.</li>
+          <li><span class="principles__k">03</span> Entrega contínua de valor real.</li>
+          <li><span class="principles__k">04</span> Arquitetura que aguenta a próxima escala.</li>
+        </ul>
+        <div class="panel__foot">
+          <span class="dim">domínios</span>
+          <div class="chips">
+            <span>SaaS</span><span>Logística</span><span>Ferramentas internas</span><span>Alta escala</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ STACK ══════════════ -->
+<section class="section" id="stack">
+  <div class="wrap">
+    <header class="s-head reveal">
+      <span class="s-head__idx">[ 02 ]</span>
+      <h2 class="s-head__title">Stack técnica</h2>
+      <span class="s-head__rule"></span>
+    </header>
+
+    <div class="stack-grid">
+
+      <article class="card card--stack reveal" style="--d:0ms">
+        <span class="card__num">01</span>
+        <h3>Backend</h3>
+        <ul class="taglist">
+          <li>Java</li><li>Spring Boot</li><li>Spring Data</li><li>Spring Web</li><li>Spring Security</li><li>Python</li><li>Go</li>
+        </ul>
+      </article>
+
+      <article class="card card--stack reveal" style="--d:60ms">
+        <span class="card__num">02</span>
+        <h3>Frontend</h3>
+        <ul class="taglist">
+          <li>React</li><li>Next.js</li><li>Dart</li>
+        </ul>
+      </article>
+
+      <article class="card card--stack reveal" style="--d:120ms">
+        <span class="card__num">03</span>
+        <h3>Dados</h3>
+        <ul class="taglist">
+          <li>PostgreSQL</li><li>SQL Server</li><li>Oracle</li><li>ClickHouse</li><li>Firebase</li>
+        </ul>
+      </article>
+
+      <article class="card card--stack reveal" style="--d:180ms">
+        <span class="card__num">04</span>
+        <h3>Infra &amp; DevOps</h3>
+        <ul class="taglist">
+          <li>Docker</li><li>Kubernetes</li><li>CI/CD</li><li>Self-hosted</li>
+        </ul>
+      </article>
+
+      <article class="card card--stack reveal" style="--d:240ms">
+        <span class="card__num">05</span>
+        <h3>Mensageria</h3>
+        <ul class="taglist">
+          <li>RabbitMQ</li><li>Sistemas distribuídos</li><li>Event-driven</li>
+        </ul>
+      </article>
+
+      <article class="card card--stack card--accent reveal" style="--d:300ms">
+        <span class="card__num">06</span>
+        <h3>IA &amp; Automação</h3>
+        <ul class="taglist">
+          <li>Agentes</li><li>Workflows com LLMs</li><li>Automação</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ EXPERIÊNCIA ══════════════ -->
+<section class="section" id="experiencia">
+  <div class="wrap">
+    <header class="s-head reveal">
+      <span class="s-head__idx">[ 03 ]</span>
+      <h2 class="s-head__title">Experiência</h2>
+      <span class="s-head__rule"></span>
+    </header>
+
+    <ol class="tl">
+
+      <li class="tl__item reveal">
+        <span class="tl__node tl__node--live"></span>
+        <div class="tl__card">
+          <div class="tl__brand">
+            <!-- fonte: https://fcamara.com/wp-content/uploads/2025/08/logo-fcamara.png -->
+            <span class="plate"><img src="assets/logos/fcamara.png" alt="Logo FCamara" loading="lazy"></span>
+            <div class="tl__meta">
+              <h3>Engenheiro de Software Sênior</h3>
+              <p class="tl__org">FCamara <span class="dim">· São Paulo, Brasil</span></p>
+            </div>
+            <span class="tl__when">set. 2025 — <b class="now">atual</b></span>
+          </div>
+          <p class="tl__desc">
+            Engenharia de software sênior dentro de um ecossistema de consultoria e transformação digital,
+            atuando em produtos e plataformas de alta exigência técnica.
+          </p>
+          <ul class="taglist taglist--sm">
+            <li>Java</li><li>Spring</li><li>Next.js</li><li>Kubernetes</li><li>Alta escala</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl__item reveal">
+        <span class="tl__node"></span>
+        <div class="tl__card">
+          <div class="tl__brand">
+            <span class="plate plate--mono" aria-hidden="true">vom<i>.</i></span>
+            <div class="tl__meta">
+              <h3>Founder Software Engineer</h3>
+              <p class="tl__org">Vom <span class="dim">· Belo Horizonte, MG</span></p>
+            </div>
+            <span class="tl__when">mai. 2025 — out. 2025</span>
+          </div>
+          <p class="tl__desc">
+            Produto próprio, do zero à produção: arquitetura, backend, frontend, infraestrutura e deploy.
+            Fundador técnico responsável por todas as camadas do stack.
+          </p>
+          <ul class="taglist taglist--sm">
+            <li>Produto do zero</li><li>Arquitetura</li><li>Full-stack</li><li>Self-hosted</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl__item reveal">
+        <span class="tl__node"></span>
+        <div class="tl__card">
+          <div class="tl__brand">
+            <!-- fonte: https://www.neuco.tech/logo.svg -->
+            <span class="plate"><img src="assets/logos/neuco.svg" alt="Logo NEUCO Tecnologia" loading="lazy"></span>
+            <div class="tl__meta">
+              <h3>Desenvolvedor Java</h3>
+              <p class="tl__org">NEUCO TECH <span class="dim">· Belo Horizonte, MG</span></p>
+            </div>
+            <span class="tl__when">jun. 2024 — mai. 2025</span>
+          </div>
+          <p class="tl__desc">
+            Desenvolvimento de software sob demanda em Java, com foco em serviços de backend,
+            integrações e persistência em bancos relacionais.
+          </p>
+          <ul class="taglist taglist--sm">
+            <li>Java</li><li>Spring Boot</li><li>RabbitMQ</li><li>PostgreSQL</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl__item reveal">
+        <span class="tl__node"></span>
+        <div class="tl__card">
+          <div class="tl__brand">
+            <!-- fonte: https://static.wixstatic.com/media/a500e0_18ce5ac7789f44e6abd86265ad8ff646~mv2.png (idgengenharia.com) -->
+            <span class="plate"><img src="assets/logos/idg.png" alt="Logo IDG Engenharia e Consultoria" loading="lazy"></span>
+            <div class="tl__meta">
+              <h3>Desenvolvedor Full Stack</h3>
+              <p class="tl__org">IDG Engenharia e Consultoria <span class="dim">· Belo Horizonte, MG</span></p>
+            </div>
+            <span class="tl__when">jan. 2022 — jun. 2024</span>
+          </div>
+          <p class="tl__desc">
+            Desenvolvimento de ferramentas operacionais utilizando Java + Spring Boot no backend
+            e React + Next.js no frontend, com SQL Server e PostgreSQL como bancos relacionais.
+          </p>
+          <ul class="taglist taglist--sm">
+            <li>Java</li><li>Spring Boot</li><li>React</li><li>Next.js</li><li>SQL Server</li><li>PostgreSQL</li>
+          </ul>
+        </div>
+      </li>
+
+    </ol>
+  </div>
+</section>
+
+<!-- ══════════════ FORMAÇÃO ══════════════ -->
+<section class="section" id="formacao">
+  <div class="wrap">
+    <header class="s-head reveal">
+      <span class="s-head__idx">[ 04 ]</span>
+      <h2 class="s-head__title">Formação acadêmica</h2>
+      <span class="s-head__rule"></span>
+    </header>
+
+    <div class="edu-grid">
+
+      <article class="card card--edu reveal">
+        <!-- fonte: https://dcc.ufmg.br/wp-content/uploads/2020/12/ufmg-branca-vermelha.png -->
+        <span class="plate plate--wide"><img src="assets/logos/ufmg.png" alt="Logo UFMG" loading="lazy"></span>
+        <h3>Sistemas de Informação</h3>
+        <p class="card__org">Universidade Federal de Minas Gerais</p>
+        <p class="card__when">mai. 2021 — dez. 2025</p>
+      </article>
+
+      <article class="card card--edu reveal" style="--d:80ms">
+        <span class="plate plate--wide"><img src="assets/logos/ufmg.png" alt="Logo UFMG" loading="lazy"></span>
+        <h3>Engenharia de Software</h3>
+        <p class="card__org">Universidade Federal de Minas Gerais <span class="dim">· Tecnologia da Informação</span></p>
+        <p class="card__when">ago. 2021 — nov. 2021</p>
+      </article>
+
+      <article class="card card--edu reveal" style="--d:160ms">
+        <!-- fonte: https://www.fiemg.com.br/senai/wp-content/uploads/sites/12/2023/02/senai.png -->
+        <span class="plate plate--wide plate--light"><img src="assets/logos/senai.png" alt="Logo SENAI" loading="lazy"></span>
+        <h3>Técnico em Mecânica</h3>
+        <p class="card__org">SESI/SENAI Rinaldo Campos Soares</p>
+        <p class="card__when">mai. 2018 — dez. 2020</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CERTIFICAÇÕES ══════════════ -->
+<section class="section" id="certificacoes">
+  <div class="wrap">
+    <header class="s-head reveal">
+      <span class="s-head__idx">[ 05 ]</span>
+      <h2 class="s-head__title">Certificações</h2>
+      <span class="s-head__rule"></span>
+    </header>
+
+    <ul class="certs">
+      <li class="certs__row reveal"><span class="certs__k">001</span><span class="certs__t">Engenharia de Software</span><span class="certs__mark">✦</span></li>
+      <li class="certs__row reveal"><span class="certs__k">002</span><span class="certs__t">Desenvolvimento WEB</span><span class="certs__mark">✦</span></li>
+      <li class="certs__row reveal"><span class="certs__k">003</span><span class="certs__t">Next.js e React — Curso Completo, Aprenda com Projetos</span><span class="certs__mark">✦</span></li>
+      <li class="certs__row reveal"><span class="certs__k">004</span><span class="certs__t">Docker Completo — Do Zero ao Avançado</span><span class="certs__mark">✦</span></li>
+      <li class="certs__row reveal"><span class="certs__k">005</span><span class="certs__t">Java Completo — Programação Orientada a Objetos + Projetos</span><span class="certs__mark">✦</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════ CONTATO ══════════════ -->
+<section class="section section--cta" id="contato">
+  <div class="wrap">
+    <div class="cta reveal">
+      <span class="cta__eyebrow">// vamos construir algo</span>
+      <h2 class="cta__title">Aberto a<br><span class="outline">novos desafios</span></h2>
+      <p class="cta__sub">
+        Backend robusto, produto do zero ou arquitetura distribuída — se o problema é técnico e difícil, quero conversar.
+      </p>
+
+      <div class="cta__links">
+        <a class="linkrow" href="mailto:joaovitorsantanadepollo@gmail.com">
+          <span class="linkrow__k">E-mail</span>
+          <span class="linkrow__v">joaovitorsantanadepollo@gmail.com</span>
+          <span class="linkrow__arrow">→</span>
+        </a>
+        <a class="linkrow" href="https://www.linkedin.com/in/joaodepollo-dev" target="_blank" rel="noopener">
+          <span class="linkrow__k">LinkedIn</span>
+          <span class="linkrow__v">/in/joaodepollo-dev</span>
+          <span class="linkrow__arrow">↗</span>
+        </a>
+        <a class="linkrow" href="Profile.pdf" target="_blank" rel="noopener">
+          <span class="linkrow__k">Currículo</span>
+          <span class="linkrow__v">Profile.pdf</span>
+          <span class="linkrow__arrow">↓</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <span>© <span id="yr">2026</span> João Vitor Santana Depollo</span>
+    <span class="dim">Belo Horizonte · Minas Gerais · Brasil</span>
+    <span class="dim">Feito com café, Java e um pouco de CSS.</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
