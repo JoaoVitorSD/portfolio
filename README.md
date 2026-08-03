@@ -16,7 +16,7 @@ acento, tipografia técnica (Bricolage Grotesque + Sora + Martian Mono).
 
 ```
 ├── index.html            # página completa
-├── Profile.pdf           # currículo
+├── Joao-Vitor-Depollo-Curriculo.pdf   # currículo
 └── assets/
     ├── css/styles.css    # estilos
     ├── js/main.js        # interações

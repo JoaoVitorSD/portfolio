@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Página não encontrada | João Vitor Depollo</title>
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#08090A">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2308090A'/%3E%3Cpath d='M8 9h4v10.4c0 2.1-1.5 3.6-3.7 3.6H7v-3h1c.7 0 1-.4 1-1.1V9z' fill='%23FF5A1F'/%3E%3Cpath d='M15 9h3.4l2.6 8.2L23.6 9H27l-4.6 14h-2.8L15 9z' fill='%23F5F1E8'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400;12..96,75..100,600;12..96,75..100,800&family=Martian+Mono:wght@300;400;600&family=Sora:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- caminho absoluto: o GitHub serve este arquivo em qualquer profundidade de URL -->
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+<style>
+  .e404{
+    position:relative; z-index:1; min-height:100vh;
+    display:grid; place-items:center; padding:6rem var(--gut) 4rem;
+  }
+  .e404__inner{ width:100%; max-width:760px }
+
+  .e404__code{
+    font-family:var(--ff-display); font-weight:800;
+    font-size:clamp(5.5rem,20vw,13rem); line-height:.82;
+    letter-spacing:-.06em; margin-bottom:1.6rem;
+    color:transparent; -webkit-text-stroke:2px var(--flare);
+    text-shadow:0 0 60px rgba(255,90,31,.3);
+  }
+  .e404__title{
+    font-family:var(--ff-display); font-weight:600;
+    font-size:clamp(1.5rem,4vw,2.4rem); letter-spacing:-.03em;
+    line-height:1.1; margin-bottom:1rem;
+  }
+  .e404__sub{ color:var(--bone-dim); max-width:46ch; margin-bottom:2.2rem }
+
+  .e404__term{
+    border:1px solid var(--line); background:linear-gradient(160deg,var(--ink-2),var(--ink));
+    padding:1rem 1.1rem; margin-bottom:2.4rem;
+    font-family:var(--ff-mono); font-size:.72rem; line-height:2;
+    overflow-x:auto; white-space:nowrap;
+  }
+  .e404__term .k{ color:var(--flare) }
+  .e404__term .e{ color:#FF6B6B }
+  .e404__term .p{ color:var(--bone-mute) }
+
+  .e404__actions{ display:flex; flex-wrap:wrap; gap:.8rem }
+  @media (max-width:560px){ .e404__actions .btn{ flex:1 1 auto; justify-content:center } }
+</style>
+</head>
+<body>
+
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-aurora bg-aurora--a"></div>
+  <div class="bg-aurora bg-aurora--b"></div>
+  <div class="bg-noise"></div>
+  <div class="bg-sweep"></div>
+</div>
+
+<main class="e404">
+  <div class="e404__inner">
+
+    <p class="eyebrow rise" style="--d:0ms">
+      <span class="status" style="color:#FF6B6B;border-color:rgba(255,107,107,.28);background:rgba(255,107,107,.05)">
+        <span class="status__dot" style="background:#FF6B6B;animation:none"></span>erro 404
+      </span>
+    </p>
+
+    <h1 class="e404__code rise" style="--d:80ms">404</h1>
+
+    <p class="e404__title rise" style="--d:170ms">Esta rota não existe.</p>
+
+    <p class="e404__sub rise" style="--d:240ms">
+      O endereço que você tentou acessar não está no servidor — pode ter sido movido,
+      ou o link estava errado.
+    </p>
+
+    <div class="e404__term rise" style="--d:320ms">
+      <span class="k">$</span> curl <span class="p" id="path">/rota-desconhecida</span><br>
+      <span class="e">HTTP/2 404</span> <span class="p">— No such file or directory</span><br>
+      <span class="k">$</span> cd <span class="p">/</span>
+    </div>
+
+    <div class="e404__actions rise" style="--d:400ms">
+      <a class="btn btn--solid" href="/">
+        Voltar ao início
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
+      </a>
+      <a class="btn btn--wire" href="mailto:joaovitorsantanadepollo@gmail.com">Falar comigo</a>
+    </div>
+
+  </div>
+</main>
+
+<script>
+  // mostra o caminho que o visitante tentou acessar
+  var el = document.getElementById('path');
+  if (el) {
+    var p = (location.pathname + location.search).slice(0, 60);
+    if (p && p !== '/') el.textContent = p;
+  }
+</script>
+</body>
+</html>
